@@ -29,6 +29,6 @@ mongoose
   .then(() => console.log("Connected to Database"))
   .catch((error) => console.log(error));
 
-app.listen(port, () => {
+app.listen(port || 5000, () => {
   console.log("Server is Running!");
 });
